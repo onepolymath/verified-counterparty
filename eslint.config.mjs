@@ -25,6 +25,14 @@ export default tseslint.config(
     },
   },
   {
+    files: ["**/test/**/*.ts"],
+    rules: {
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-confusing-void-expression": "off",
+      "@typescript-eslint/no-base-to-string": "off",
+    },
+  },
+  {
     files: ["**/*.mjs", "**/*.js"],
     ...tseslint.configs.disableTypeChecked,
   },

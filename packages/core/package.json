@@ -1,0 +1,33 @@
+{
+  "name": "@verified-counterparty/core",
+  "version": "0.1.0",
+  "description": "Policy engine, Concordium badge verifier, x402 payment guard and tamper-evident audit log for agent-to-agent payments.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./x402": "./src/payment/x402-concordium.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:live": "LIVE=1 vitest run test/live",
+    "demo": "tsx src/cli/demo.ts"
+  },
+  "dependencies": {
+    "@concordium/web-sdk": "^12.0.2",
+    "@x402/concordium": "^2.31.0",
+    "@x402/core": "^2.31.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^5.1.0",
+    "tsx": "^4.23.15",
+    "vitest": "^5.1.0"
+  }
+}
