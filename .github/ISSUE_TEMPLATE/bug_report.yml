@@ -1,0 +1,26 @@
+name: Bug report
+description: Something in the guard, verifier or demo behaves incorrectly
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the badge, payTo and the decision summary if relevant. Never paste private keys.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. pnpm demo\n2. ..."
+  - type: input
+    id: version
+    attributes:
+      label: Commit / version

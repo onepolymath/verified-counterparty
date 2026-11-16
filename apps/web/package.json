@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "pnpm --filter @verified-counterparty/core build && next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "echo 'web: covered by core tests + e2e smoke in CI' && exit 0"
   },
   "dependencies": {
