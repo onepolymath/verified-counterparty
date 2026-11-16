@@ -16,6 +16,7 @@ export * from "./payment/x402-types.js";
 export * from "./payment/payer.js";
 export * from "./payment/payment-guard.js";
 export * from "./audit/audit-log.js";
+export * from "./seller/seller-gate.js";
 export * from "./util/crypto.js";
 export * from "./util/errors.js";
 export type { FetchLike } from "./util/http.js";
