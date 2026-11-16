@@ -1,0 +1,30 @@
+{
+  "name": "verified-counterparty",
+  "private": true,
+  "description": "An x402 payment guard for AI agents: never pay an agent that can't prove a verified human stands behind it.",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter web dev",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "test:coverage": "pnpm --filter @verified-counterparty/core test:coverage",
+    "test:live": "pnpm --filter @verified-counterparty/core test:live",
+    "demo": "pnpm --filter @verified-counterparty/core demo"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^9.39.5",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.2"
+  }
+}
