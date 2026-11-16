@@ -17,7 +17,8 @@
     "test": "pnpm -r test",
     "test:coverage": "pnpm --filter @verified-counterparty/core test:coverage",
     "test:live": "pnpm --filter @verified-counterparty/core test:live",
-    "demo": "pnpm --filter @verified-counterparty/core demo"
+    "demo": "pnpm --filter @verified-counterparty/core demo",
+    "pay": "pnpm --filter @verified-counterparty/core pay"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
