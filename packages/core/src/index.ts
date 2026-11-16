@@ -20,3 +20,4 @@ export * from "./seller/seller-gate.js";
 export * from "./util/crypto.js";
 export * from "./util/errors.js";
 export type { FetchLike } from "./util/http.js";
+export * from "./demo/scenarios.js";
