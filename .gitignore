@@ -8,7 +8,9 @@ out/
 .env
 .env.*
 !.env.example
-audit/*.jsonl
+**/audit/*.jsonl
 keys/
 *.export
 .DS_Store
+
+next-env.d.ts

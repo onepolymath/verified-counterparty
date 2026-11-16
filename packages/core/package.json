@@ -4,11 +4,25 @@
   "description": "Policy engine, Concordium badge verifier, x402 payment guard and tamper-evident audit log for agent-to-agent payments.",
   "license": "MIT",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./x402": "./src/payment/x402-concordium.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./x402": {
+      "types": "./dist/payment/x402-concordium.d.ts",
+      "import": "./dist/payment/x402-concordium.js"
+    },
+    "./node": {
+      "types": "./dist/audit/jsonl-sink.d.ts",
+      "import": "./dist/audit/jsonl-sink.js"
+    },
+    "./audit": {
+      "types": "./dist/audit/audit-log.d.ts",
+      "import": "./dist/audit/audit-log.js"
+    }
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -29,5 +43,9 @@
     "@vitest/coverage-v8": "^5.1.0",
     "tsx": "^4.23.15",
     "vitest": "^5.1.0"
-  }
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
 }
