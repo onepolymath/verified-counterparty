@@ -73,8 +73,8 @@ importers:
   packages/core:
     dependencies:
       '@concordium/web-sdk':
-        specifier: ^12.0.2
-        version: 12.0.2(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)
+        specifier: ^12.0.3
+        version: 12.0.3(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)
       '@x402/concordium':
         specifier: ^2.31.0
         version: 2.31.0(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)
@@ -129,8 +129,8 @@ packages:
     resolution: {integrity: sha512-poJUD5qFh57wenTUKP93gL4YLSzsfnznniRgEY7OaUwa2drkLyAw+SQO0Ou7THwz8elT7pXB4bLKvIm+J+4RpA==}
     engines: {node: '>=16'}
 
-  '@concordium/web-sdk@12.0.2':
-    resolution: {integrity: sha512-GyB4WQQKnNq/VOCQaVbLBHPFoszvU17Klqj5mbpGkvrdSDvny5J/VosWtr2LHAHo7OrDRBDzRtAobuzglay86Q==}
+  '@concordium/web-sdk@12.0.3':
+    resolution: {integrity: sha512-oSW3x6HW7c460AmuyBBCIpes0OynfilobwHR4vsL6yEWnHVqjLZ7+zGsa+mLH665y3pPZQBjHcu5R+yK7mqXqA==}
     engines: {node: '>=16'}
     peerDependencies:
       '@protobuf-ts/runtime-rpc': ^2.8.2
@@ -878,8 +878,8 @@ packages:
   '@tailwindcss/postcss@4.3.5':
     resolution: {integrity: sha512-FAV37Tlx9wBiT/hkfgVD0Q6CWsP2oUX3lf28nrfjW8+ksILjnpuFulUqWDfNR4/ZiEHHDRBX8DUTzD1Rys687A==}
 
-  '@tybys/wasm-util@0.10.4':
-    resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
+  '@tybys/wasm-util@0.10.5':
+    resolution: {integrity: sha512-dOGOPxlaNV+G046mZzN+9C0dAcQZeSKcXiVaM0TYy/LM4ttTmgSBDxYfovcYI8Em3+eAbiAYpvWLOv8+ZVRJKA==}
 
   '@types/big.js@6.2.2':
     resolution: {integrity: sha512-e2cOW9YlVzFY2iScnGBBkplKsrn2CsObHQ2Hiw4V1sSyiGbgWL8IyqE3zFi1Pt5o1pdAtYkDAIsF3KKUPjdzaA==}
@@ -1831,7 +1831,7 @@ snapshots:
 
   '@concordium/rust-bindings@4.0.1': {}
 
-  '@concordium/web-sdk@12.0.2(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)':
+  '@concordium/web-sdk@12.0.3(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)':
     dependencies:
       '@concordium/rust-bindings': 4.0.1
       '@grpc/grpc-js': 1.14.7
@@ -2160,7 +2160,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 2.0.0-beta.2
       '@emnapi/runtime': 2.0.0-beta.2
-      '@tybys/wasm-util': 0.10.4
+      '@tybys/wasm-util': 0.10.5
     optional: true
 
   '@next/env@16.4.6': {}
@@ -2366,7 +2366,7 @@ snapshots:
       postcss: 8.5.33
       tailwindcss: 4.3.5
 
-  '@tybys/wasm-util@0.10.4':
+  '@tybys/wasm-util@0.10.5':
     dependencies:
       tslib: 2.9.1
     optional: true
@@ -2518,7 +2518,7 @@ snapshots:
 
   '@x402/concordium@2.31.0(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)':
     dependencies:
-      '@concordium/web-sdk': 12.0.2(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)
+      '@concordium/web-sdk': 12.0.3(@protobuf-ts/runtime-rpc@2.11.1)(cbor2@1.12.0)
       '@x402/core': 2.31.0
     transitivePeerDependencies:
       - '@protobuf-ts/runtime-rpc'
